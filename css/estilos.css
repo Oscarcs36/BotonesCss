@@ -1,0 +1,110 @@
+.contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+.contenedor ul {
+    text-align: center;
+}
+
+.botones {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    text-align: center;
+    transition: all .7s;
+    box-shadow: 0 5px 10px rgb(221, 219, 219);
+}
+
+.icono, .nombre {
+    margin-top: 16px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+.nombre {
+    display: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Sofia Sans', sans-serif;
+}
+
+.botones:hover {
+    width: 190px;
+    border-radius: 35px;
+    box-shadow: 0 5px 10px rgb(187, 187, 187);
+}
+
+.botones:hover .nombre {
+    font-size: 18px;
+    display: block;
+
+}
+
+.botones:hover .icono {
+    display: none;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.twitter {
+    color: #00acee;
+}
+
+.whatsapp {
+    color: #25D366;
+}
+
+.twitch {
+    color: #6441a5;
+}
+
+.botones:hover a {
+    color: white;
+}
+
+.facebook:hover {
+    background: rgb(59,89,152);
+    background: linear-gradient(90deg, rgba(59,89,152,1) 0%, rgba(96,138,226,1) 100%);
+
+}
+
+.twitter:hover {
+    background:linear-gradient(45deg, #0d8de2, #00ACEE, #55dafb);
+}
+
+.whatsapp:hover {
+    background:linear-gradient(45deg, #189985, #00E676);
+}
+
+.twitch:hover {
+    background:linear-gradient(90deg, #734abe, #8746ff, #b288ff);
+}
+
+.twitch:hover .nombre {
+    color: black;
+}
+
+.instagram {
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.instagram:hover {
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-text-fill-color: white;
+}
+
+.botones:active {
+    transform: translateY(10px);
+}
